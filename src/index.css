@@ -119,7 +119,8 @@ All colors MUST be HSL.
     background-image: var(--gradient-accent) !important;
     background-color: transparent !important;
     color: white !important;
-    transition: all 0.3s ease !important;
+    transition: background-image 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    pointer-events: auto !important;
   }
   
   .group:hover .pricing-btn {
