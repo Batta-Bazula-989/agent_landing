@@ -117,7 +117,9 @@ All colors MUST be HSL.
 @layer components {
   .pricing-btn {
     background: var(--gradient-accent) !important;
+    background-image: var(--gradient-accent) !important;
     color: white !important;
+    transition: background 0.3s ease, background-image 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
   }
   
   .group:hover .pricing-btn {
