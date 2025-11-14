@@ -94,6 +94,9 @@ export const CTA = () => {
               <Button
                 size="lg"
                 className="bg-gradient-accent hover:opacity-90 transition-opacity text-xl px-12 py-7 shadow-lg-custom group"
+                onClick={() => {
+                  document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Дивитись тарифи
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

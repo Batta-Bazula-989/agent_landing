@@ -40,6 +40,9 @@ export const Hero = () => {
             <Button
               size="lg"
               className="bg-gradient-accent hover:opacity-90 transition-opacity text-lg px-8 py-6 shadow-lg-custom"
+              onClick={() => {
+                document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Тарифи
             </Button>
