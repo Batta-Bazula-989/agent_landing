@@ -156,7 +156,7 @@ export const Pricing = () => {
                 </div>
 
                 <Button
-                  className="w-full mt-6 transition-all bg-gradient-accent hover:opacity-90 text-white group-hover:bg-white group-hover:text-primary group-hover:shadow-lg"
+                  className="w-full mt-6 transition-all bg-gradient-accent text-white group-hover:bg-white group-hover:text-primary group-hover:shadow-lg group-hover:border-0"
                   size="lg"
                 >
                   Обрати
