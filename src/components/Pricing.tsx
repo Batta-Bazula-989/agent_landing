@@ -90,34 +90,30 @@ export const Pricing = () => {
           {plans.map((plan) => (
             <Card
               key={plan.id}
-              className={`relative overflow-hidden transition-all duration-300 cursor-pointer group ${
-                plan.featured
-                  ? "bg-primary text-primary-foreground border-primary shadow-lg-custom scale-105 md:scale-110"
-                  : "bg-card border-border hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-lg-custom hover:scale-105"
-              }`}
+              className="relative overflow-hidden transition-all duration-300 cursor-pointer group bg-card border-border hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-lg-custom hover:scale-105"
             >
-              <div className={`absolute top-4 right-4 transition-opacity ${plan.featured ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}>
+              <div className="absolute top-4 right-4 transition-opacity opacity-0 group-hover:opacity-100">
                 <Badge className="bg-white/20 text-white border-white/30">
                   {plan.featured ? "Рекомендовано" : "Обрати"}
                 </Badge>
               </div>
               
               <CardHeader className="pb-4">
-                <div className={`flex items-center gap-3 mb-4 transition-colors ${plan.featured ? "text-white" : "text-foreground group-hover:text-white"}`}>
-                  <div className={`p-2 rounded-lg transition-colors ${plan.featured ? "bg-white/20" : "bg-primary/10 group-hover:bg-white/20"}`}>
+                <div className="flex items-center gap-3 mb-4 transition-colors text-foreground group-hover:text-white">
+                  <div className="p-2 rounded-lg transition-colors bg-primary/10 group-hover:bg-white/20">
                     {plan.icon}
                   </div>
                   <h3 className="text-2xl font-bold">{plan.name}</h3>
                 </div>
                 
                 <div className="space-y-1">
-                  <div className={`text-4xl font-bold transition-colors ${plan.featured ? "text-white" : "text-foreground group-hover:text-white"}`}>
+                  <div className="text-4xl font-bold transition-colors text-foreground group-hover:text-white">
                     від {plan.basePrice}
                   </div>
-                  <div className={`text-sm transition-colors ${plan.featured ? "text-white/80" : "text-muted-foreground group-hover:text-white/80"}`}>
+                  <div className="text-sm transition-colors text-muted-foreground group-hover:text-white/80">
                     / місяць
                   </div>
-                  <div className={`text-xs mt-2 transition-colors ${plan.featured ? "text-white/70" : "text-muted-foreground group-hover:text-white/70"}`}>
+                  <div className="text-xs mt-2 transition-colors text-muted-foreground group-hover:text-white/70">
                     за період підписки:
                   </div>
                 </div>
@@ -125,33 +121,31 @@ export const Pricing = () => {
 
               <CardContent className="space-y-6">
                 <div className="space-y-3">
-                  <div className={`font-semibold text-lg transition-colors ${plan.featured ? "text-white" : "text-foreground group-hover:text-white"}`}>
+                  <div className="font-semibold text-lg transition-colors text-foreground group-hover:text-white">
                     {plan.baseResponses}
                   </div>
                   
                   <div className="space-y-2">
-                    <div className={`flex items-start gap-2 transition-colors ${plan.featured ? "text-white/90" : "text-muted-foreground group-hover:text-white/90"}`}>
-                      <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 transition-colors ${plan.featured ? "text-white" : "text-primary group-hover:text-white"}`} />
+                    <div className="flex items-start gap-2 transition-colors text-muted-foreground group-hover:text-white/90">
+                      <Check className="w-5 h-5 flex-shrink-0 mt-0.5 transition-colors text-primary group-hover:text-white" />
                       <span className="text-sm">{plan.channels}</span>
                     </div>
-                    <div className={`flex items-start gap-2 transition-colors ${plan.featured ? "text-white/90" : "text-muted-foreground group-hover:text-white/90"}`}>
-                      <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 transition-colors ${plan.featured ? "text-white" : "text-primary group-hover:text-white"}`} />
+                    <div className="flex items-start gap-2 transition-colors text-muted-foreground group-hover:text-white/90">
+                      <Check className="w-5 h-5 flex-shrink-0 mt-0.5 transition-colors text-primary group-hover:text-white" />
                       <span className="text-sm">{plan.support}</span>
                     </div>
                   </div>
                 </div>
 
-                <div className={`pt-4 border-t transition-colors ${plan.featured ? "border-white/20" : "border-border group-hover:border-white/20"}`}>
-                  <div className={`text-sm font-medium mb-3 transition-colors ${plan.featured ? "text-white/90" : "text-foreground group-hover:text-white/90"}`}>
+                <div className="pt-4 border-t transition-colors border-border group-hover:border-white/20">
+                  <div className="text-sm font-medium mb-3 transition-colors text-foreground group-hover:text-white/90">
                     Цей тариф з більшою кількістю відповідей:
                   </div>
                   <div className="space-y-2">
                     {plan.tiers.map((tier, index) => (
                       <div
                         key={index}
-                        className={`flex justify-between items-center text-sm transition-colors ${
-                          plan.featured ? "text-white/80" : "text-muted-foreground group-hover:text-white/80"
-                        }`}
+                        className="flex justify-between items-center text-sm transition-colors text-muted-foreground group-hover:text-white/80"
                       >
                         <span>{tier.price}</span>
                         <span>-</span>
@@ -162,11 +156,7 @@ export const Pricing = () => {
                 </div>
 
                 <Button
-                  className={`w-full mt-6 transition-all ${
-                    plan.featured
-                      ? "bg-white text-primary hover:bg-white/90"
-                      : "bg-gradient-accent hover:opacity-90 text-white group-hover:bg-white group-hover:text-primary"
-                  }`}
+                  className="w-full mt-6 transition-all bg-gradient-accent hover:opacity-90 text-white group-hover:bg-white group-hover:text-primary"
                   size="lg"
                 >
                   Обрати
