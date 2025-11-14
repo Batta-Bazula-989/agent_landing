@@ -114,11 +114,16 @@ All colors MUST be HSL.
   }
 }
 
-@layer utilities {
-  .group:hover .pricing-button {
+@layer components {
+  .pricing-btn {
+    background: var(--gradient-accent) !important;
+    color: white !important;
+  }
+  
+  .group:hover .pricing-btn {
+    background: white !important;
     background-image: none !important;
-    background-color: white !important;
     color: hsl(var(--primary)) !important;
-    box-shadow: 0 20px 60px -15px hsl(210 100% 50% / 0.3);
+    box-shadow: 0 20px 60px -15px hsl(210 100% 50% / 0.3) !important;
   }
 }
