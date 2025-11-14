@@ -1,0 +1,38 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0080FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00B8D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="200" cy="150" r="100" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1000" cy="480" r="120" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Main content -->
+  <g transform="translate(600, 315)">
+    <!-- Icon/Logo area -->
+    <circle cx="0" cy="-80" r="60" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="3"/>
+    <text x="0" y="-70" font-family="Arial, sans-serif" font-size="40" fill="white" text-anchor="middle">🤖</text>
+    
+    <!-- Title -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">
+      ШІ-консультант 24/7
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+      Автоматизація обслуговування клієнтів
+    </text>
+    
+    <!-- Description -->
+    <text x="0" y="140" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+      Telegram • WhatsApp • Instagram • Facebook
+    </text>
+  </g>
+</svg>
+
