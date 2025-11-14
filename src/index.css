@@ -113,3 +113,12 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .group:hover .pricing-button {
+    background-image: none !important;
+    background-color: white !important;
+    color: hsl(var(--primary)) !important;
+    box-shadow: 0 20px 60px -15px hsl(210 100% 50% / 0.3);
+  }
+}

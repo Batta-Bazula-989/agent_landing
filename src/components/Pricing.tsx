@@ -157,6 +157,19 @@ export const Pricing = () => {
 
                 <button
                   className="w-full mt-6 h-11 rounded-md px-8 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all duration-300 bg-gradient-accent text-white group-hover:bg-white group-hover:text-primary group-hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+                  style={{
+                    backgroundImage: 'var(--gradient-accent)',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundImage = 'none';
+                    e.currentTarget.style.backgroundColor = 'white';
+                    e.currentTarget.style.color = 'hsl(var(--primary))';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundImage = 'var(--gradient-accent)';
+                    e.currentTarget.style.backgroundColor = '';
+                    e.currentTarget.style.color = 'white';
+                  }}
                 >
                   Обрати
                 </button>
