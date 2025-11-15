@@ -1,35 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight, Brain, FileText, Monitor, Target, Wrench, BarChart3 } from "lucide-react";
 
 const packages = [
   {
-    icon: "🧠",
+    icon: Brain,
     title: "Налаштуваний Консультант 24/7",
     description: "Під ваш бізнес, з навчанням на ваших матеріалах"
   },
   {
-    icon: "📄",
+    icon: FileText,
     title: "База знань",
     description: "Створення та наповнення інформацією про ваш бізнес та послуги, щоб консультант відповідав точно"
   },
   {
-    icon: "🤖",
+    icon: Monitor,
     title: "Підключення ШІ до всіх каналів",
     description: "Telegram, WhatsApp, Instagram, Facebook, онлайн-чат на сайті"
   },
   {
-    icon: "🎯",
+    icon: Target,
     title: "Адаптація під ваші процеси",
     description: "Налаштування скриптів діалогів та логіки роботи консультанта"
   },
   {
-    icon: "🔧",
+    icon: Wrench,
     title: "Технічна підтримка",
     description: "Допомога у налаштуванні та відповіді на питання протягом усього періоду використання"
   },
   {
-    icon: "📊",
+    icon: BarChart3,
     title: "Оновлення та покращення",
     description: "Регулярні оновлення консультанта з новими можливостями"
   }
@@ -69,15 +69,20 @@ export const CTA = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-3 text-foreground">Що входить у пакет:</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  {packages.map((pkg, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <span className="text-3xl flex-shrink-0">{pkg.icon}</span>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">{pkg.title}</h4>
-                        <p className="text-sm text-muted-foreground">{pkg.description}</p>
+                  {packages.map((pkg, index) => {
+                    const IconComponent = pkg.icon;
+                    return (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="p-2 rounded-lg bg-primary/10 flex-shrink-0">
+                          <IconComponent className="w-5 h-5 text-primary" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-1">{pkg.title}</h4>
+                          <p className="text-sm text-muted-foreground">{pkg.description}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>
