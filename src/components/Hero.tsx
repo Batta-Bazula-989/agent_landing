@@ -51,7 +51,7 @@ export const Hero = () => {
               variant="outline"
               className="text-lg px-8 py-6 border-2 hover:bg-muted"
             >
-              Дізнатись більше
+              Дізнатися більше
             </Button>
           </div>
         </div>

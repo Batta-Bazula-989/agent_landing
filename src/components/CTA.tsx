@@ -67,7 +67,7 @@ export const CTA = () => {
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Що входить в пакет:</h3>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Що входить у пакет:</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {packages.map((pkg, index) => (
                     <div key={index} className="flex items-start gap-3">
