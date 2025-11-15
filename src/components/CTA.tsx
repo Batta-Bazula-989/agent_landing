@@ -62,23 +62,23 @@ export const CTA = () => {
 
         <Card className="mb-12 border-2 border-primary/20 shadow-lg-custom animate-scale-in bg-card">
           <CardContent className="p-8">
-            <div className="flex items-start gap-4 mb-6">
+            <div className="flex items-start gap-4 mb-8">
               <div className="p-3 rounded-xl bg-gradient-accent flex-shrink-0">
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Що входить у пакет:</h3>
-                <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Що входить у пакет:</h3>
+                <div className="grid md:grid-cols-2 gap-x-8 gap-y-5">
                   {packages.map((pkg, index) => {
                     const IconComponent = pkg.icon;
                     return (
-                      <div key={index} className="flex items-start gap-3">
-                        <div className="p-2 rounded-lg bg-primary/10 flex-shrink-0">
+                      <div key={index} className="flex items-start gap-4">
+                        <div className="p-2.5 rounded-lg bg-primary/10 flex-shrink-0 mt-0.5">
                           <IconComponent className="w-5 h-5 text-primary" />
                         </div>
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-1">{pkg.title}</h4>
-                          <p className="text-sm text-muted-foreground">{pkg.description}</p>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-semibold text-foreground mb-1.5 leading-tight">{pkg.title}</h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{pkg.description}</p>
                         </div>
                       </div>
                     );
@@ -87,7 +87,7 @@ export const CTA = () => {
               </div>
             </div>
 
-            <div className="bg-muted/50 rounded-xl p-6 mb-6">
+            <div className="bg-muted/50 rounded-xl p-6 mb-8">
               <p className="text-center text-foreground font-medium">
                 Бот працює повністю в автоматичному режимі ✅
                 <br />
