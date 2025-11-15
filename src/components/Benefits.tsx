@@ -42,21 +42,21 @@ export const Benefits = () => {
             return (
               <Card
                 key={index}
-                className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all duration-300"
+                className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
-                    <div className="p-3 rounded-full bg-white/20">
-                      <Icon className="w-8 h-8 text-white" />
+                    <div className="p-3 rounded-full bg-primary/10">
+                      <Icon className="w-8 h-8 text-primary" />
                     </div>
                   </div>
-                  <p className="text-white/90 text-sm mb-4 min-h-[3rem]">
+                  <p className="text-muted-foreground text-sm mb-4 min-h-[3rem]">
                     {benefit.description}
                   </p>
-                  <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                  <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                     {benefit.valueHighlight}
                   </div>
-                  <p className="text-white/80 text-sm">
+                  <p className="text-muted-foreground text-sm">
                     {benefit.value}
                   </p>
                 </CardContent>
