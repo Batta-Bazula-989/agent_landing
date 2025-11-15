@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
 
-    --primary: 210 100% 50%;
+    --primary: 210 75% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 190 100% 45%;
+    --secondary: 190 70% 45%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 15% 92%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 190 100% 45%;
+    --accent: 190 70% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,13 +34,13 @@ All colors MUST be HSL.
 
     --border: 220 15% 88%;
     --input: 220 15% 88%;
-    --ring: 210 100% 50%;
+    --ring: 210 75% 48%;
 
     --radius: 0.75rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 50% / 0.1) 0%, hsl(190 100% 45% / 0.1) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(190 100% 45%) 100%);
-    --shadow-lg: 0 20px 60px -15px hsl(210 100% 50% / 0.3);
+    --gradient-hero: linear-gradient(135deg, hsl(210 75% 48% / 0.1) 0%, hsl(190 70% 45% / 0.1) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(210 75% 48%) 0%, hsl(190 70% 45%) 100%);
+    --shadow-lg: 0 20px 60px -15px hsl(210 75% 48% / 0.3);
     --shadow-card: 0 4px 20px -2px hsl(220 15% 15% / 0.08);
 
     --sidebar-background: 0 0% 98%;
@@ -127,6 +127,6 @@ All colors MUST be HSL.
     background-image: none !important;
     background-color: white !important;
     color: hsl(var(--primary)) !important;
-    box-shadow: 0 20px 60px -15px hsl(210 100% 50% / 0.3) !important;
+    box-shadow: 0 20px 60px -15px hsl(210 75% 48% / 0.3) !important;
   }
 }
