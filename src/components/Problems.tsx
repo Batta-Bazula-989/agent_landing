@@ -72,8 +72,8 @@ export const Problems = () => {
                 </div>
                 <ul className="space-y-3">
                   {problem.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
-                      <span className="text-destructive flex-shrink-0 text-base leading-[1.5] inline-block" style={{ lineHeight: '1.5', verticalAlign: 'top' }}>✕</span>
+                    <li key={itemIndex} className="flex gap-3 text-muted-foreground">
+                      <span className="text-destructive flex-shrink-0 text-sm leading-relaxed" style={{ paddingTop: '0.125rem' }}>✕</span>
                       <span className="text-sm leading-relaxed flex-1">{item}</span>
                     </li>
                   ))}
