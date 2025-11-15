@@ -73,7 +73,7 @@ export const Problems = () => {
                 <ul className="space-y-3">
                   {problem.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
-                      <span className="text-destructive mt-0.5 flex-shrink-0 text-lg leading-none">✕</span>
+                      <span className="text-destructive flex-shrink-0 text-lg leading-none self-start">✕</span>
                       <span className="text-sm leading-relaxed flex-1">{item}</span>
                     </li>
                   ))}
