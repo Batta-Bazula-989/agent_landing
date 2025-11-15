@@ -83,8 +83,8 @@ export const Features = () => {
                 </div>
                 <ul className="space-y-3">
                   {feature.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
-                      <span className="text-primary mt-0.5 flex-shrink-0 text-lg leading-none">●</span>
+                    <li key={itemIndex} className="flex gap-3 text-muted-foreground">
+                      <span className="text-primary flex-shrink-0 text-base leading-[1.5]">●</span>
                       <span className="text-sm leading-relaxed flex-1">{item}</span>
                     </li>
                   ))}
