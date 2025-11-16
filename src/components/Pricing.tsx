@@ -90,7 +90,7 @@ export const Pricing = () => {
           {plans.map((plan) => (
             <Card
               key={plan.id}
-              className="relative overflow-hidden cursor-pointer group bg-card border-border h-full"
+              className="relative overflow-hidden cursor-pointer group bg-card border-border"
               style={{ 
                 transform: 'scale(1)',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -140,8 +140,8 @@ export const Pricing = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-6 h-full flex flex-col">
-                <div className="space-y-3">
+              <CardContent className="space-y-6">
+                <div className="space-y-3 min-h-[140px] md:min-h-[120px]">
                   <div className="font-semibold text-lg text-foreground group-hover:text-white" style={{ transition: 'color 0.3s ease' }}>
                     {plan.baseResponses}
                   </div>
@@ -157,8 +157,6 @@ export const Pricing = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="flex-1" />
 
                 <div className="pt-4 border-t border-border group-hover:border-white/20" style={{ transition: 'border-color 0.3s ease' }}>
                   <div className="text-sm font-medium mb-3 text-foreground group-hover:text-white/90" style={{ transition: 'color 0.3s ease' }}>
