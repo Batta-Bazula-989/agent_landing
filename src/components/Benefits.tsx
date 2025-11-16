@@ -4,9 +4,9 @@ import { TrendingDown, Zap, Repeat } from "lucide-react";
 const benefits = [
   {
     icon: TrendingDown,
-    description: 'які "зависли без відповіді"',
-    value: "на 60% менше запитів",
-    valueHighlight: "60%",
+    description: 'Необроблених запитів',
+    value: "на 60% менше",
+    valueHighlight: "-60%",
   },
   {
     icon: Zap,
