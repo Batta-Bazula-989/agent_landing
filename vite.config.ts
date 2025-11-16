@@ -5,10 +5,6 @@ import path from "path";
 // Unified Vite config for dev (server) and production (preview)
 export default defineConfig({
   plugins: [react()],
-  server: {
-    host: "::",
-    port: 8080,
-  },
   preview: {
     host: true,
     port: 3000,
